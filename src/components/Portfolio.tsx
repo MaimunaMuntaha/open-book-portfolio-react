@@ -399,7 +399,7 @@ const Portfolio = () => {
       <section className="relative min-h-screen flex items-center justify-center px-4 z-20">
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8">
-            <div className="w-30 h-30 mx-auto rounded-full overflow-hidden border-4 border-cyan-400 neon-glow shadow-2xl">
+            <div className="w-20 h-20 mx-auto rounded-full overflow-hidden border-4 border-cyan-400 neon-glow shadow-2xl">
               <img
                 src="https://media.licdn.com/dms/image/v2/D4E03AQHSj4djTIIEZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701149980435?e=1756339200&v=beta&t=_paAmPYIVNj67bV6Yxw_Mpa-qU3YcFvOHPnVkgo6NIk"
                 alt="Maimuna Muntaha"
