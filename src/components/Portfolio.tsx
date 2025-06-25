@@ -1,6 +1,20 @@
-
 import React, { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight, Download, ExternalLink, Github, Linkedin, Youtube, Play } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Download,
+  ExternalLink,
+  Github,
+  Linkedin,
+  Youtube,
+  Play,
+} from "lucide-react";
+import colabImg from "/images/colab.png";
+import gameImg from "/images/game.png";
+import goodstatusImg from "/images/goodstatus.png";
+import feedbackImg from "/images/feedback.png";
+import nasaImg from "/images/nasa.png";
+import predictiveImg from "/images/predictive.png";
 
 const Portfolio = () => {
   const [showIntro, setShowIntro] = useState(false);
@@ -15,15 +29,15 @@ const Portfolio = () => {
 
   const roles = [
     "Software Engineer",
-    "Product Manager", 
+    "Product Manager",
     "Data Analyst",
     "UX Researcher",
-    "Technical Writer"
+    "Technical Writer",
   ];
 
   const academics = [
     "I'm currently a senior at Stanford University, concentrating in Human Computer Interaction with a Master's in Management Science & Engineering.",
-    "I combine technical expertise with creative problem-solving to build impactful software solutions and drive innovation through research and design."
+    "I combine technical expertise with creative problem-solving to build impactful software solutions and drive innovation through research and design.",
   ];
 
   const projects = [
@@ -32,180 +46,237 @@ const Portfolio = () => {
       description: (
         <>
           <p className="mb-4">
-            Developed Co-Lab, a sophisticated project-matching platform for the Stanford community that addresses coordination opacity in collaborative initiatives.
+            Developed Co-Lab, a sophisticated project-matching platform for the
+            Stanford community that addresses coordination opacity in
+            collaborative initiatives.
           </p>
           <p className="mb-4">
-            <strong>Key Features:</strong> Stanford SSO authentication, personalized feed ranking, real-time search filtering, and instant project publishing with Firestore integration.
+            <strong>Key Features:</strong> Stanford SSO authentication,
+            personalized feed ranking, real-time search filtering, and instant
+            project publishing with Firestore integration.
           </p>
           <p className="mb-4">
-            <strong>Impact:</strong> Streamlined collaboration formation through intelligent tag-based matching and real-time updates.
+            <strong>Impact:</strong> Streamlined collaboration formation through
+            intelligent tag-based matching and real-time updates.
           </p>
         </>
       ),
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
+      image: colabImg,
       link: "https://docs.google.com/document/d/1eUh4dupSBPem_IHob-TmjJpwT7SyMwYNfNYKqOo1KVM/edit?usp=sharing",
-      tech: ["React", "TypeScript", "Firebase", "Node.js"]
+      tech: ["React", "TypeScript", "Firebase", "Node.js"],
     },
     {
       title: "Last Dive - Interactive Game Experience",
       description: (
         <>
           <p className="mb-4">
-            Created an immersive escape-room-in-a-box experience featuring a hijacked submarine scenario with integrated digital and physical gameplay elements.
+            Created an immersive escape-room-in-a-box experience featuring a
+            hijacked submarine scenario with integrated digital and physical
+            gameplay elements.
           </p>
           <p className="mb-4">
-            <strong>Technical Implementation:</strong> Built with React and TypeScript, featuring environmental condition management, automated puzzle validation, and seamless game flow without requiring a game master.
+            <strong>Technical Implementation:</strong> Built with React and
+            TypeScript, featuring environmental condition management, automated
+            puzzle validation, and seamless game flow without requiring a game
+            master.
           </p>
           <p className="mb-4">
-            <strong>Innovation:</strong> Successfully bridged physical and digital gaming to enhance immersion and challenge complexity.
+            <strong>Innovation:</strong> Successfully bridged physical and
+            digital gaming to enhance immersion and challenge complexity.
           </p>
         </>
       ),
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
+      image: gameImg,
       link: "https://mechanicsofmagic.com/2025/06/07/p2-last-dive-group-21/",
-      tech: ["React", "TypeScript", "Game Design", "UX/UI"]
+      tech: ["React", "TypeScript", "Game Design", "UX/UI"],
     },
     {
       title: "Good Status - Wellbeing Application",
       description: (
         <>
           <p className="mb-4">
-            Developed a comprehensive wellbeing application with social features, AI-powered responses, and secure user authentication.
+            Developed a comprehensive wellbeing application with social
+            features, AI-powered responses, and secure user authentication.
           </p>
           <p className="mb-4">
-            <strong>Features:</strong> Social status sharing, AI-generated wellness recommendations via Gemini API, friend networking, and personalized wellbeing tasks.
+            <strong>Features:</strong> Social status sharing, AI-generated
+            wellness recommendations via Gemini API, friend networking, and
+            personalized wellbeing tasks.
           </p>
           <p className="mb-4">
-            <strong>Backend:</strong> Implemented robust database architecture using Supabase with advanced SQL queries and Row Level Security policies.
+            <strong>Backend:</strong> Implemented robust database architecture
+            using Supabase with advanced SQL queries and Row Level Security
+            policies.
           </p>
         </>
       ),
-      image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=600&h=400&fit=crop",
+      image: goodstatusImg,
       link: "https://github.com/MaimunaMuntaha/GoodStatus.git",
-      tech: ["React", "SQL", "Supabase", "Gemini API"]
+      tech: ["React", "SQL", "Supabase", "Gemini API"],
     },
     {
       title: "Voice Feedback Systems Research",
       description: (
         <>
           <p className="mb-4">
-            Conducted comprehensive HCI research investigating the impact of user involvement in error detection and correction on transcription accuracy.
+            Conducted comprehensive HCI research investigating the impact of
+            user involvement in error detection and correction on transcription
+            accuracy.
           </p>
           <p className="mb-4">
-            <strong>Methodology:</strong> Developed and evaluated three voice dictation system variations with different feedback mechanisms using Python and advanced audio processing.
+            <strong>Methodology:</strong> Developed and evaluated three voice
+            dictation system variations with different feedback mechanisms using
+            Python and advanced audio processing.
           </p>
           <p className="mb-4">
-            <strong>Results:</strong> Post-transcription feedback achieved 99.1% proper noun accuracy, significantly improving accessibility for screenless and hands-free environments.
+            <strong>Results:</strong> Post-transcription feedback achieved 99.1%
+            proper noun accuracy, significantly improving accessibility for
+            screenless and hands-free environments.
           </p>
         </>
       ),
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
+      image: feedbackImg,
       link: "https://github.com/matthewjguck/audio.git",
-      tech: ["Python", "Audio Processing", "HCI Research", "Data Analysis"]
+      tech: ["Python", "Audio Processing", "HCI Research", "Data Analysis"],
     },
     {
       title: "NASA Climate Research - ML Model",
       description: (
         <>
           <p className="mb-4">
-            Analyzed relationships between air temperature and land surface temperature using NASA MODIS data across global and NYC-specific scales as part of the CCRI Team.
+            Analyzed relationships between air temperature and land surface
+            temperature using NASA MODIS data across global and NYC-specific
+            scales as part of the CCRI Team.
           </p>
           <p className="mb-4">
-            <strong>Scale:</strong> Processed data from 227 global stations and 8 NYC locations, incorporating thermal imaging and machine learning for predictive modeling.
+            <strong>Scale:</strong> Processed data from 227 global stations and
+            8 NYC locations, incorporating thermal imaging and machine learning
+            for predictive modeling.
           </p>
           <p className="mb-4">
-            <strong>Impact:</strong> Advanced climate change research while engaging high school students and environmental justice organizations in hands-on scientific inquiry.
+            <strong>Impact:</strong> Advanced climate change research while
+            engaging high school students and environmental justice
+            organizations in hands-on scientific inquiry.
           </p>
         </>
       ),
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=400&fit=crop",
+      image: nasaImg,
       link: "#",
-      tech: ["Machine Learning", "Python", "Climate Data", "Research"]
+      tech: ["Machine Learning", "Python", "Climate Data", "Research"],
     },
     {
       title: "Predictive Policing Analysis",
       description: (
         <>
           <p className="mb-4">
-            Recreated and analyzed predictive policing models using NYPD historical data to examine algorithmic bias in law enforcement applications.
+            Recreated and analyzed predictive policing models using NYPD
+            historical data to examine algorithmic bias in law enforcement
+            applications.
           </p>
           <p className="mb-4">
-            <strong>Methodology:</strong> Applied Bayesian statistical concepts with NYC demographic data to calculate crime probability distributions across neighborhoods.
+            <strong>Methodology:</strong> Applied Bayesian statistical concepts
+            with NYC demographic data to calculate crime probability
+            distributions across neighborhoods.
           </p>
           <p className="mb-4">
-            <strong>Findings:</strong> Identified systematic biases targeting socioeconomically disadvantaged areas, demonstrating how AI inherits historical discrimination patterns.
+            <strong>Findings:</strong> Identified systematic biases targeting
+            socioeconomically disadvantaged areas, demonstrating how AI inherits
+            historical discrimination patterns.
           </p>
         </>
       ),
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
+      image: predictiveImg,
       link: "https://docs.google.com/document/d/14siQDmsjhZkG6QzkFAdnJHYDLw2Ak-LJxtBof_Qxu3g/edit?usp=sharing",
-      tech: ["Python", "Bayesian Statistics", "Data Analysis", "Ethics in AI"]
-    }
+      tech: ["Python", "Bayesian Statistics", "Data Analysis", "Ethics in AI"],
+    },
   ];
 
   const hobbies = [
     {
-      title: "Digital Storytelling & Filmmaking",
+      title: "Filmmaking",
       description: (
         <>
           <p className="mb-4">
-            I document life experiences through creative video storytelling, focusing on authentic narratives and personal growth journeys.
+            I have vlogged my entire life, mainly for myself and for the
+            enjoyment of my friends. Here's a vlog of my last week as a
+            sophomore at Stanford:
           </p>
           <div className="aspect-video bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-yellow-400">
             <div className="text-center">
-              <Play className="w-12 h-12 mx-auto mb-2 text-yellow-400" />
-              <p className="text-sm text-yellow-400 font-mono">Stanford Sophomore Year Reflection</p>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/bPIsqNQ04Wc?si=G5D74TUJkDo2jeLh"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
-          <p className="text-sm text-cyan-300 font-mono">
-            Featured: "Last Week as a Sophomore at Stanford" - A reflective vlog capturing pivotal moments in academic and personal development.
-          </p>
         </>
       ),
-      image: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=600&h=400&fit=crop",
+      image: "/images/video.png",
       link: "https://www.youtube.com/@mussvlogs",
-      tech: ["Video Editing", "Storytelling", "Creative Direction"]
+      tech: ["Video Editing", "Storytelling", "Creative Direction"],
     },
     {
       title: "Visual Arts & Painting",
       description: (
         <>
           <p className="mb-4">
-            Long-standing passion for visual expression through various painting mediums, exploring themes of identity, nature, and human experience.
+            Long-standing passion for visual expression through various painting
+            mediums, exploring themes of identity, nature, and human experience.
           </p>
           <div className="grid grid-cols-3 gap-2 mb-4">
-            <div className="aspect-square bg-gradient-to-br from-blue-500 to-cyan-400 rounded border-2 border-yellow-400"></div>
-            <div className="aspect-square bg-gradient-to-br from-green-500 to-lime-400 rounded border-2 border-yellow-400"></div>
-            <div className="aspect-square bg-gradient-to-br from-purple-500 to-pink-400 rounded border-2 border-yellow-400"></div>
+            <img
+              src="/images/painting1.png"
+              alt="Painting 1"
+              className="aspect-square object-cover rounded border-2 border-yellow-400"
+            />
+            <img
+              src="/images/painting2.png"
+              alt="Painting 2"
+              className="aspect-square object-cover rounded border-2 border-yellow-400"
+            />
+            <img
+              src="/images/painting3.png"
+              alt="Painting 3"
+              className="aspect-square object-cover rounded border-2 border-yellow-400"
+            />
           </div>
+
           <p className="text-sm text-cyan-300 font-mono">
-            Portfolio includes landscape studies, abstract compositions, and portrait work developed over years of artistic practice.
+            Portfolio includes landscape studies, abstract compositions, and
+            portrait work developed over years of artistic practice.
           </p>
         </>
       ),
-      image: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&h=400&fit=crop",
+      image: "/images/painting.png",
       link: "#",
-      tech: ["Traditional Media", "Digital Art", "Color Theory"]
+      tech: ["Traditional Media", "Digital Art", "Color Theory"],
     },
     {
       title: "Creative Writing & Literature",
       description: (
         <>
           <p className="mb-4">
-            Studied Creative Writing at Oxford University during Winter 2025 term, exploring diverse narrative forms including science fiction, memoir, and experimental prose.
+            I studied abroad at Oxford University for Winter (Hilary) term in
+            2025 and I did my tutorial in Creative Writing. I wrote different
+            types of stories like science fiction and memoirs.
           </p>
-          <p className="mb-4">
-            <strong>Academic Focus:</strong> Tutorial-based learning in various writing genres, developing skills in character development, narrative structure, and literary analysis.
-          </p>
+
           <p className="text-sm text-cyan-300 font-mono">
-            This intensive program enhanced my ability to communicate complex ideas through compelling storytelling across multiple mediums.
+            I do love creative writing, I have written many different songs and
+            short stories.
           </p>
         </>
       ),
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
+      image: "/images/writing.png",
       link: "#",
-      tech: ["Creative Writing", "Literary Analysis", "Narrative Structure"]
-    }
+      tech: ["Creative Writing", "Literary Analysis", "Narrative Structure"],
+    },
   ];
 
   // Sound effects
@@ -219,76 +290,82 @@ const Portfolio = () => {
     const handleMouseMove = (e) => {
       setPacmanPosition({ x: e.clientX, y: e.clientY });
     };
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   useEffect(() => {
     let cancelled = false;
     (async () => {
       // Play coin sound on load
-      playSound('coin');
-      
+      playSound("coin");
+
       // Show intro section
       setShowIntro(true);
-      
+
       // Animate roles with Pac-Man collecting dots
       for (let i = 0; i < roles.length; i++) {
         if (cancelled) return;
-        await new Promise(res => setTimeout(res, 800));
-        setVisibleRoles(prev => [...prev, roles[i]]);
-        setCollectedDots(prev => [...prev, i]);
-        playSound('chomp');
+        await new Promise((res) => setTimeout(res, 800));
+        setVisibleRoles((prev) => [...prev, roles[i]]);
+        setCollectedDots((prev) => [...prev, i]);
+        playSound("chomp");
       }
-      
+
       // Show academic background
-      await new Promise(res => setTimeout(res, 800));
+      await new Promise((res) => setTimeout(res, 800));
       for (let i = 0; i < academics.length; i++) {
         if (cancelled) return;
-        await new Promise(res => setTimeout(res, 1000));
-        setVisibleAcademics(prev => [...prev, academics[i]]);
+        await new Promise((res) => setTimeout(res, 1000));
+        setVisibleAcademics((prev) => {
+          if (!prev.includes(academics[i])) {
+            return [...prev, academics[i]];
+          }
+          return prev;
+        });
       }
-      
+
       // Enable navigation
-      await new Promise(res => setTimeout(res, 1000));
+      await new Promise((res) => setTimeout(res, 1000));
       setCanContinue(true);
     })();
-    
+
     return () => {
       cancelled = true;
     };
   }, []);
 
-  const pages = tab === "hobbies" ? hobbies : tab === "projects" ? projects : [];
+  const pages =
+    tab === "hobbies" ? hobbies : tab === "projects" ? projects : [];
 
   const handleNavigation = (direction) => {
-    playSound('wakka');
-    if (direction === 'next') {
-      setPage(p => p + 1);
+    playSound("wakka");
+    if (direction === "next") {
+      setPage((p) => p + 1);
     } else {
-      setPage(p => p - 1);
+      setPage((p) => p - 1);
     }
   };
 
   const handleTabClick = (newTab) => {
-    playSound('chomp');
+    playSound("chomp");
     setTab(newTab);
     setPage(0);
   };
 
   const handleClick = () => {
-    playSound('chomp');
+    playSound("chomp");
   };
 
   return (
     <div className="min-h-screen bg-black relative overflow-hidden pacman-maze">
       {/* Custom Pacman Cursor */}
-      <div 
+      <div
         className="pacman-cursor fixed pointer-events-none z-50"
         style={{
           left: pacmanPosition.x - 10,
           top: pacmanPosition.y - 10,
-          transform: 'translate(-50%, -50%)'
+          transform: "translate(-50%, -50%)",
         }}
       >
         <div className="w-5 h-5 bg-yellow-400 rounded-full relative">
@@ -298,10 +375,21 @@ const Portfolio = () => {
 
       {/* Floating Ghosts */}
       <div className="ghost-container fixed inset-0 pointer-events-none z-10">
-        <div className="ghost ghost-red" style={{top: '10%', left: '5%'}}>👻</div>
-        <div className="ghost ghost-blue" style={{top: '20%', right: '10%'}}>👻</div>
-        <div className="ghost ghost-pink" style={{bottom: '30%', left: '8%'}}>👻</div>
-        <div className="ghost ghost-orange" style={{bottom: '15%', right: '5%'}}>👻</div>
+        <div className="ghost ghost-red" style={{ top: "10%", left: "5%" }}>
+          👻
+        </div>
+        <div className="ghost ghost-blue" style={{ top: "20%", right: "10%" }}>
+          👻
+        </div>
+        <div className="ghost ghost-pink" style={{ bottom: "30%", left: "8%" }}>
+          👻
+        </div>
+        <div
+          className="ghost ghost-orange"
+          style={{ bottom: "15%", right: "5%" }}
+        >
+          👻
+        </div>
       </div>
 
       {/* Maze Grid Background */}
@@ -311,13 +399,19 @@ const Portfolio = () => {
       <section className="relative min-h-screen flex items-center justify-center px-4 z-20">
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8">
-            <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-6xl font-bold text-black shadow-2xl border-4 border-cyan-400 neon-glow">
-              M
+            <div className="w-58 h-53 mx-auto rounded-full overflow-hidden border-4 border-cyan-400 neon-glow shadow-2xl">
+              <img
+                src="/images/me.png"
+                alt="Maimuna Muntaha"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-yellow-400 mb-6 pixel-font neon-text">
-            MAIMUNA MUNTAHA
-          </h1>
+          <div className="neon-wrapper">
+            <h1 className="text-5xl md:text-7xl font-bold text-yellow-400 mb-6 pixel-font neon-text">
+              MAIMUNA MUNTAHA
+            </h1>
+          </div>
           <p className="text-xl md:text-2xl text-cyan-300 font-mono">
             &gt; HUMAN_COMPUTER_INTERACTION • STANFORD_UNIVERSITY &lt;
           </p>
@@ -331,20 +425,20 @@ const Portfolio = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-center text-yellow-400 mb-16 pixel-font neon-text">
               POWER_UP_COLLECTION
             </h2>
-            
+
             <div className="grid md:grid-cols-5 gap-6 mb-16">
               {roles.map((role, i) => (
-                <div 
+                <div
                   key={i}
                   className={`arcade-card p-6 text-center transform transition-all duration-500 hover:scale-105 ${
-                    visibleRoles.includes(role) ? 'animate-bounce' : 'opacity-0'
+                    visibleRoles.includes(role) ? "animate-bounce" : "opacity-0"
                   }`}
                   style={{
                     animationDelay: `${i * 0.2}s`,
                   }}
                 >
                   <div className="text-2xl mb-2">
-                    {collectedDots.includes(i) ? '🟡' : '⚫'}
+                    {collectedDots.includes(i) ? "🟡" : "⚫"}
                   </div>
                   <div className="text-sm font-mono text-cyan-300 font-bold">
                     {role.toUpperCase()}
@@ -355,12 +449,14 @@ const Portfolio = () => {
 
             <div className="max-w-4xl mx-auto text-center space-y-6">
               {visibleAcademics.map((line, i) => (
-                <p 
-                  key={i} 
+                <p
+                  key={i}
                   className="text-lg md:text-xl text-green-400 leading-relaxed opacity-0 font-mono animate-fade-in"
                   style={{
-                    animationDelay: `${(visibleRoles.length * 0.2) + (i * 0.5) + 0.5}s`,
-                    animationFillMode: 'forwards'
+                    animationDelay: `${
+                      visibleRoles.length * 0.2 + i * 0.5 + 0.5
+                    }s`,
+                    animationFillMode: "forwards",
                   }}
                 >
                   &gt; {line}
@@ -380,7 +476,7 @@ const Portfolio = () => {
                 <p className="text-cyan-300 mb-4 font-mono">
                   &gt; NAVIGATE_THROUGH_ARCADE_SECTIONS_BELOW &lt;
                 </p>
-                <button 
+                <button
                   onClick={() => {
                     setShowInstruction(false);
                     handleClick();
@@ -398,9 +494,7 @@ const Portfolio = () => {
                 {["projects", "hobbies", "about"].map((t) => (
                   <button
                     key={t}
-                    className={`arcade-button ${
-                      tab === t ? "active" : ""
-                    }`}
+                    className={`arcade-button ${tab === t ? "active" : ""}`}
                     onClick={() => handleTabClick(t)}
                   >
                     {t.toUpperCase()}
@@ -415,13 +509,13 @@ const Portfolio = () => {
                 <div className="arcade-screen">
                   {/* Image Section */}
                   <div className="screen-left">
-                    <img 
-                      src={pages[page]?.image} 
+                    <img
+                      src={pages[page]?.image}
                       alt={pages[page]?.title}
                       className="w-full h-full object-cover pixel-border"
                     />
                   </div>
-                  
+
                   {/* Content Section */}
                   <div className="screen-right">
                     <div>
@@ -431,11 +525,13 @@ const Portfolio = () => {
                       <div className="text-cyan-300 leading-relaxed mb-6 font-mono text-sm">
                         {pages[page]?.description}
                       </div>
-                      
+
                       {/* Tech Stack */}
                       {pages[page]?.tech && (
                         <div className="mb-6">
-                          <h4 className="font-bold text-green-400 mb-2 font-mono">TECH_STACK:</h4>
+                          <h4 className="font-bold text-green-400 mb-2 font-mono">
+                            TECH_STACK:
+                          </h4>
                           <div className="flex flex-wrap gap-2">
                             {pages[page].tech.map((tech, i) => (
                               <span key={i} className="power-up-badge">
@@ -445,10 +541,10 @@ const Portfolio = () => {
                           </div>
                         </div>
                       )}
-                      
+
                       {/* Project Link */}
                       {pages[page]?.link && pages[page].link !== "#" && (
-                        <a 
+                        <a
                           href={pages[page].link}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -460,24 +556,24 @@ const Portfolio = () => {
                         </a>
                       )}
                     </div>
-                    
+
                     {/* Navigation */}
                     <div className="flex justify-between items-center mt-8">
                       <button
-                        onClick={() => handleNavigation('prev')}
+                        onClick={() => handleNavigation("prev")}
                         disabled={page === 0}
                         className="nav-button"
                       >
                         <ChevronLeft className="w-4 h-4 mr-1" />
                         PREV
                       </button>
-                      
+
                       <span className="text-sm text-yellow-400 font-mono">
                         LEVEL {page + 1} / {pages.length}
                       </span>
-                      
+
                       <button
-                        onClick={() => handleNavigation('next')}
+                        onClick={() => handleNavigation("next")}
                         disabled={page === pages.length - 1}
                         className="nav-button"
                       >
@@ -491,29 +587,42 @@ const Portfolio = () => {
                 /* About Section */
                 <div className="arcade-screen">
                   <div className="screen-left">
-                    <div className="w-64 h-64 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-8xl font-bold text-black shadow-2xl border-4 border-cyan-400 neon-glow mx-auto">
-                      M
+                    <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-cyan-400 neon-glow shadow-2xl">
+                      <img
+                        src="/images/me.png"
+                        alt="Maimuna Muntaha"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                   <div className="screen-right">
-                    <h3 className="text-3xl font-bold text-yellow-400 mb-6 pixel-font">PLAYER_PROFILE</h3>
-                    {visibleAcademics.map((line, i) => (
-                      <p key={i} className="text-cyan-300 leading-relaxed mb-4 font-mono">
-                        &gt; {line}
-                      </p>
-                    ))}
+                    <h3 className="text-3xl font-bold text-yellow-400 mb-6 pixel-font">
+                      PLAYER_PROFILE
+                    </h3>
+
                     <div className="mt-6">
-                      <h4 className="font-bold text-green-400 mb-3 font-mono">EDUCATION_STATS:</h4>
+                      <h4 className="font-bold text-green-400 mb-3 font-mono">
+                        EDUCATION_STATS:
+                      </h4>
                       <p className="text-cyan-300 font-mono text-sm">
-                        <strong className="text-yellow-400">STANFORD_UNIVERSITY</strong><br />
-                        &gt; B.S. Human-Computer Interaction<br />
+                        <strong className="text-yellow-400">
+                          STANFORD_UNIVERSITY
+                        </strong>
+                        <br />
+                        &gt; B.S. Human-Computer Interaction
+                        <br />
                         &gt; M.S. Management Science & Engineering
                       </p>
                     </div>
                     <div className="mt-6">
-                      <h4 className="font-bold text-green-400 mb-3 font-mono">BONUS_LEVEL:</h4>
+                      <h4 className="font-bold text-green-400 mb-3 font-mono">
+                        BONUS_LEVEL:
+                      </h4>
                       <p className="text-cyan-300 font-mono text-sm">
-                        <strong className="text-yellow-400">OXFORD_UNIVERSITY</strong><br />
+                        <strong className="text-yellow-400">
+                          OXFORD_UNIVERSITY
+                        </strong>
+                        <br />
                         &gt; Creative Writing Tutorial (Winter 2025)
                       </p>
                     </div>
@@ -526,28 +635,30 @@ const Portfolio = () => {
       )}
 
       {/* Resume Section */}
+      {/* Resume Section */}
       <section className="py-20 px-4 relative z-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-8 pixel-font neon-text">
             PLAYER_STATS_SHEET
           </h2>
           <div className="arcade-cabinet-frame p-8 mb-8">
-            <div className="aspect-[8.5/11] bg-black rounded border-4 border-cyan-400 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Download className="w-8 h-8 text-black" />
-                </div>
-                <p className="text-cyan-300 font-mono">RESUME_PREVIEW</p>
-              </div>
+            <div className="aspect-[8.5/11] bg-black rounded border-4 border-cyan-400 flex items-center justify-center overflow-hidden">
+              <img
+                src="/images/resume.png"
+                alt="Resume Preview"
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
-          <button 
+          <a
+            href="/images/resume.png"
+            download="Maimuna_Muntaha_Resume.png"
             className="arcade-button inline-flex items-center"
             onClick={handleClick}
           >
             <Download className="w-4 h-4 mr-2" />
             DOWNLOAD_STATS
-          </button>
+          </a>
         </div>
       </section>
 
@@ -556,11 +667,15 @@ const Portfolio = () => {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <p className="text-lg font-bold text-yellow-400 pixel-font">MAIMUNA MUNTAHA</p>
-              <p className="text-cyan-300 font-mono">© {new Date().getFullYear()} ALL_RIGHTS_RESERVED</p>
+              <p className="text-lg font-bold text-yellow-400 pixel-font">
+                MAIMUNA MUNTAHA
+              </p>
+              <p className="text-cyan-300 font-mono">
+                © {new Date().getFullYear()} ALL_RIGHTS_RESERVED
+              </p>
             </div>
             <div className="flex space-x-6">
-              <a 
+              <a
                 href="https://www.linkedin.com/in/maimuna-muntaha"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -569,7 +684,7 @@ const Portfolio = () => {
               >
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a 
+              <a
                 href="https://github.com/MaimunaMuntaha"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -578,7 +693,7 @@ const Portfolio = () => {
               >
                 <Github className="w-6 h-6" />
               </a>
-              <a 
+              <a
                 href="https://www.youtube.com/@mussvlogs"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -600,12 +715,14 @@ const Portfolio = () => {
         }
         
         .pacman-maze {
-          background: 
-            radial-gradient(circle at 25% 25%, #0066cc 2px, transparent 2px),
-            radial-gradient(circle at 75% 75%, #0066cc 2px, transparent 2px);
-          background-size: 40px 40px;
-          background-position: 0 0, 20px 20px;
-        }
+  background-color: black;
+  background-image: 
+    radial-gradient(circle at 25% 25%, #0066cc 2px, transparent 2px),
+    radial-gradient(circle at 75% 75%, #0066cc 2px, transparent 2px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
         
         .maze-grid {
           background-image: 
@@ -622,11 +739,18 @@ const Portfolio = () => {
         }
         
         .neon-text {
-          text-shadow: 
-            0 0 5px #ffff00,
-            0 0 10px #ffff00,
-            0 0 20px #ffff00;
-        }
+  text-shadow: 
+    0 0 3px #ffff00,
+    0 0 6px #ffff00,
+    0 0 12px #ffff00; /* LESS than 20px */
+}
+.neon-wrapper {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
         
         .arcade-card {
           background: linear-gradient(135deg, #001122, #002244);
