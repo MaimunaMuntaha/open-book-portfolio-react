@@ -407,6 +407,7 @@ const Portfolio = () => {
               />
             </div>
           </div>
+
           <div className="neon-wrapper">
             <h1 className="text-5xl md:text-7xl font-bold text-yellow-400 mb-6 pixel-font neon-text">
               MAIMUNA MUNTAHA
