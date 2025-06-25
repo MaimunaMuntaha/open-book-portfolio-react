@@ -424,7 +424,7 @@ const Portfolio = () => {
         <section className="py-20 px-4 relative z-20">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-center text-yellow-400 mb-16 pixel-font neon-text">
-              POWER_UP_COLLECTION
+              MY SKILLS
             </h2>
 
             <div className="grid md:grid-cols-5 gap-6 mb-16">
@@ -590,7 +590,7 @@ const Portfolio = () => {
                   <div className="screen-left">
                     <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-cyan-400 neon-glow shadow-2xl">
                       <img
-                        src="https://media.licdn.com/dms/image/v2/D4E03AQHSj4djTIIEZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701149980435?e=1756339200&v=beta&t=_paAmPYIVNj67bV6Yxw_Mpa-qU3YcFvOHPnVkgo6NIkg"
+                        src="/images/me.png"
                         alt="Maimuna Muntaha"
                         className="w-full h-full object-cover"
                       />
@@ -598,16 +598,16 @@ const Portfolio = () => {
                   </div>
                   <div className="screen-right">
                     <h3 className="text-3xl font-bold text-yellow-400 mb-6 pixel-font">
-                      PLAYER_PROFILE
+                      PLAYER PROFILE
                     </h3>
 
                     <div className="mt-6">
                       <h4 className="font-bold text-green-400 mb-3 font-mono">
-                        EDUCATION_STATS:
+                        EDUCATION STATS:
                       </h4>
                       <p className="text-cyan-300 font-mono text-sm">
                         <strong className="text-yellow-400">
-                          STANFORD_UNIVERSITY
+                          STANFORD UNIVERSITY
                         </strong>
                         <br />
                         &gt; B.S. Human-Computer Interaction
@@ -617,11 +617,11 @@ const Portfolio = () => {
                     </div>
                     <div className="mt-6">
                       <h4 className="font-bold text-green-400 mb-3 font-mono">
-                        BONUS_LEVEL:
+                        BONUS SIDE QUEST:
                       </h4>
                       <p className="text-cyan-300 font-mono text-sm">
                         <strong className="text-yellow-400">
-                          OXFORD_UNIVERSITY
+                          OXFORD UNIVERSITY
                         </strong>
                         <br />
                         &gt; Creative Writing Tutorial (Winter 2025)
@@ -640,7 +640,7 @@ const Portfolio = () => {
       <section className="py-20 px-4 relative z-20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-8 pixel-font neon-text">
-            PLAYER_STATS_SHEET
+            PLAYER_STATS_and_EXPERIENCES
           </h2>
           <div className="arcade-cabinet-frame p-8 mb-8">
             <div className="aspect-[8.5/11] bg-black rounded border-4 border-cyan-400 flex items-center justify-center overflow-hidden">
