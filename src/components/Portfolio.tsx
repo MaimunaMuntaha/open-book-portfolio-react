@@ -401,7 +401,7 @@ const Portfolio = () => {
           <div className="mb-8">
             <div className="w-58 h-53 mx-auto rounded-full overflow-hidden border-4 border-cyan-400 neon-glow shadow-2xl">
               <img
-                src="/images/me.png"
+                src="https://media.licdn.com/dms/image/v2/D4E03AQHSj4djTIIEZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701149980435?e=1756339200&v=beta&t=_paAmPYIVNj67bV6Yxw_Mpa-qU3YcFvOHPnVkgo6NIk"
                 alt="Maimuna Muntaha"
                 className="w-full h-full object-cover"
               />
@@ -589,7 +589,7 @@ const Portfolio = () => {
                   <div className="screen-left">
                     <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-cyan-400 neon-glow shadow-2xl">
                       <img
-                        src="/images/me.png"
+                        src="https://media.licdn.com/dms/image/v2/D4E03AQHSj4djTIIEZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701149980435?e=1756339200&v=beta&t=_paAmPYIVNj67bV6Yxw_Mpa-qU3YcFvOHPnVkgo6NIkg"
                         alt="Maimuna Muntaha"
                         className="w-full h-full object-cover"
                       />
