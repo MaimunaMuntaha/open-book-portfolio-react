@@ -626,6 +626,12 @@ const Portfolio = () => {
                         <br />
                         &gt; Creative Writing Tutorial (Winter 2025)
                       </p>
+                      <p className="text-cyan-300 font-mono text-sm">
+                        <strong className="text-yellow-400">Bonus:</strong>
+                        <br />
+                        &gt; Attended YC's First AI Startup School in 2025
+                        <br />
+                      </p>
                     </div>
                   </div>
                 </div>
