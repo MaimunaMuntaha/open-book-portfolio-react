@@ -631,6 +631,10 @@ const Portfolio = () => {
                         <br />
                         &gt; Attended YC's First AI Startup School in 2025
                         <br />
+                        <br />
+                        &gt; Questbridge College Prep Scholar and National
+                        College Match Award Recipient
+                        <br />
                       </p>
                     </div>
                   </div>
