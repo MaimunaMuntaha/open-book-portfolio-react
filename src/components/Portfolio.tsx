@@ -215,6 +215,12 @@ const Portfolio = () => {
               ></iframe>
             </div>
           </div>
+          <p className="mb-4">
+            I also LOVE FILM ANALYSIS!!!{" "}
+            <a href="https://letterboxd.com/maimunam/">
+              Check out my LetterBoxd
+            </a>
+          </p>
         </>
       ),
       image: "/images/film.png",
@@ -270,6 +276,12 @@ const Portfolio = () => {
           <p className="text-sm text-cyan-300 font-mono">
             I do love creative writing, I have written many different songs and
             short stories.
+          </p>
+          <p className="text-sm text-cyan-300 font-mono">
+            I also love reading!!!{" "}
+            <a href="https://www.goodreads.com/user/show/180978233-maimuna-muntaha">
+              Here is a link to my Goodreaads
+            </a>
           </p>
         </>
       ),
