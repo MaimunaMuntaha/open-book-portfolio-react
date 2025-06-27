@@ -217,7 +217,10 @@ const Portfolio = () => {
           </div>
           <p className="mb-4">
             I also LOVE FILM ANALYSIS!!!{" "}
-            <a href="https://letterboxd.com/maimunam/">
+            <a
+              href="https://letterboxd.com/maimunam/"
+              className="text-yellow-400 underline"
+            >
               Check out my LetterBoxd
             </a>
           </p>
@@ -279,7 +282,10 @@ const Portfolio = () => {
           </p>
           <p className="text-sm text-cyan-300 font-mono">
             I also love reading!!!{" "}
-            <a href="https://www.goodreads.com/user/show/180978233-maimuna-muntaha">
+            <a
+              href="https://www.goodreads.com/user/show/180978233-maimuna-muntaha"
+              className="text-yellow-400 underline"
+            >
               Here is a link to my Goodreaads
             </a>
           </p>
