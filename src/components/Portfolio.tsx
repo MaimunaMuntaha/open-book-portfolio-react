@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import colabImg from "/images/colab.png";
 import gameImg from "/images/game.png";
-import reciper from "/images/recipe.png";
+import reciper from "/images/reciper.png";
 import goodstatusImg from "/images/goodstatus.png";
 import feedbackImg from "/images/feedback.png";
 import nasaImg from "/images/nasa.png";
