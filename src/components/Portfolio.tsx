@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import colabImg from "/images/colab.png";
 import gameImg from "/images/game.png";
+import reciper from "/images/recipe.png";
 import goodstatusImg from "/images/goodstatus.png";
 import feedbackImg from "/images/feedback.png";
 import nasaImg from "/images/nasa.png";
@@ -138,6 +139,27 @@ const Portfolio = () => {
       image: feedbackImg,
       link: "https://github.com/matthewjguck/audio.git",
       tech: ["Python", "Audio Processing", "HCI Research", "Data Analysis"],
+    },
+    {
+      title: "Voice Controlled Cooking Site",
+      description: (
+        <>
+          <p className="mb-4">
+            Whenever I cook, I always get my hands dirty, and consequently, my
+            hands. I wanted to build something where you can save your recipes
+            and use voice dictation to see the steps of the recipe to follow
+            without having to touch my device.
+          </p>
+          <p className="mb-4">
+            <strong>Methodology:</strong> I used audio libraries to listen when
+            the cook was speaking, and whenever the computer processed the words
+            "next step," the next step of the recipe would appear
+          </p>
+        </>
+      ),
+      image: reciper,
+      link: " https://superlative-biscuit-187621.netlify.app/",
+      tech: ["React", "Voice Dictation", "TypeScript", "AI"],
     },
     {
       title: "NASA Climate Research - ML Model",
