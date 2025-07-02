@@ -146,9 +146,9 @@ const Portfolio = () => {
         <>
           <p className="mb-4">
             Whenever I cook, I always get my hands dirty, and consequently, my
-            hands. I wanted to build something where you can save your recipes
+            laptop. I wanted to build something where you can save your recipes
             and use voice dictation to see the steps of the recipe to follow
-            without having to touch my device.
+            without having to touch your device.
           </p>
           <p className="mb-4">
             <strong>Methodology:</strong> I used audio libraries to listen when
